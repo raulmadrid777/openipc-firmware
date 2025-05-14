@@ -1,14 +1,3 @@
-From d4053da3da7b65451f1fa9d78c40ec265a473426 Mon Sep 17 00:00:00 2001
-From: raulmadrid777 <raulzhang123@163.com>
-Date: Wed, 14 May 2025 16:45:25 +0800
-Subject: [PATCH] Disable VHT for kernel 3.0.8 compatibility
-
----
- os_dep/linux/ioctl_cfg80211.c | 6 +++---
- 1 file changed, 3 insertions(+), 3 deletions(-)
-
-diff --git a/os_dep/linux/ioctl_cfg80211.c b/os_dep/linux/ioctl_cfg80211.c
-index 86c45b9..13d190e 100644
 --- a/os_dep/linux/ioctl_cfg80211.c
 +++ b/os_dep/linux/ioctl_cfg80211.c
 @@ -8917,7 +8917,7 @@ static void rtw_cfg80211_init_vht_capab(_adapter *padapter
@@ -38,5 +27,4 @@ index 86c45b9..13d190e 100644
                         #endif
                 }
         }
---
-2.34.1
+
